@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- ROW 1 -->
+      <div class="row mt-5">
+        <!-- INPUT FORM -->
+        <input
+          type="number"
+          name="inputnumber"
+          id="idinputnum"
+          required
+          min="10"
+          max="20"
+          placeholder="Input a number between 10 to 20."
+        />
+        <!-- SUBMIT BUTTON -->
+        <div>
+          <button
+            type="submit"
+            class="d-grid mx-auto btn btn-secondary"
+            id="idsubmit"
+          >
+            Submit
+          </button>
+        </div>
+        <p id="idwarning" class="text-center"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

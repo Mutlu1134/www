@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documnt</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <p id="first">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <p onclick="myFunction()" id="parag">Buraya Tıkla.</p>
+    <button onclick="alert('You clicked the button')">Click for Alert</button>
+    <div onmouseover="this.style.backgroundColor='red'">
+      Turn red when mouse over here
+    </div>
+    <div id="div1" onmouseover="changeColor()">Turn yellow onmouseover</div>
+
+    <input type="text" name="q" id="txt1" />
+    <button type="submit" onclick="calculate()">Calculate char length</button>
+    <br />
+
+    <div onmouseover="buyut()">
+      <p style="display: inline-block" id="kck">Yazım Denetleme</p>
+      <button onclick="buyut()">Büyüt</button>
+    </div>
+    <img
+      id="Photo"
+      src="https://picsum.photos/id/58/200/300"
+      alt="200*300 photos"
+    />
+
+    <br />
+
+    <input type="text" name="inpuT" id="input1" value="Hellö" />
+    <br />
+    <br />
+    <div style="border: 1px solid black">
+      <button id="but">Yazması için tıkla</button>
+      <p id="sec">Yazacak</p>
+    </div>
+    <br /><br />
+    <button id="mybutton">Alert Butonu</button>
+    <p id="Resize">Resize</p>
+
+    <p onclick="changeText(this)">Click here</p>
+
+    <div
+      id="div-id"
+      style="border: 1px solid black; height: 150px; width: 300px"
+    >
+      <button onclick="RemoveListener()">Remove addlistener</button>
+    </div>
+    <p id="randnum">-</p>
+
+    <hr />
+    <br />
+    <h1 id="hh1">Lorem, ipsum dolor.</h1>
+    <p id="pp1">-</p>
+
+    <div id="apdev"></div>
+
+    <div id="apdev2"></div>
+
+    <div id="apdev3"></div>
+    <input type="text" id="inpt1" />
+    <button type="submit" id="sbmt1" onclick="benimfunction()">
+      Kontrol et
+    </button>
+    <p id="snc"></p>
+    <script src="js/app.js"></script>
+  </body>
+</html>

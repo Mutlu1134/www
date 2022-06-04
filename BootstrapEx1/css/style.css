@@ -1,0 +1,17 @@
+.yazi {
+  background-color: #3e1;
+}
+
+.aside-nav {
+  list-style-type: none;
+}
+
+.aside-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.grid {
+  --bs-columns: 4px;
+}
+/*# sourceMappingURL=style.css.map */

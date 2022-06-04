@@ -1,0 +1,23 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.background-color {
+  background-color: #ffc017;
+}
+.border-curve {
+  border-radius: 20px;
+}
+.bb {
+  border-bottom: 1px solid black;
+}
+
+.bb-light {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.brdr {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.brdr-clr {
+  color: rgba(0, 0, 0, 0.6);
+}

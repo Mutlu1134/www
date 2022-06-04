@@ -1,0 +1,1 @@
+    <p>Hi There, This element get by AJAX from ajaxEx.txt</p>
