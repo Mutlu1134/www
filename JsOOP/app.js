@@ -1,9 +1,8 @@
 $(document).ready(function () {
-  localStorage.clear();
   // QUESTION BANK
   sorular = [
     {
-      soru: "Tarihin sıfır noktası olarak bilinen, insanlık tarihinin ilk somut kalıntılarının bulunduğu Göbekli tepe hangi ilimizdedir?",
+      soru: " 0 Tarihin sıfır noktası olarak bilinen, insanlık tarihinin ilk somut kalıntılarının bulunduğu Göbekli tepe hangi ilimizdedir?",
       secenekler: {
         a: "Mardin",
         b: "Sanliurfa",
@@ -13,7 +12,7 @@ $(document).ready(function () {
       dogrucevap: "B",
     },
     {
-      soru: "Tarihin bir başka dönüm noktası olarak gösterilir. Sultanahmet Meydanı'nda, Yerebatan Sarnıcı üstünde yer alır. İstanbul'a gelen turistlerin mutlaka uğrak yerleri arasındadır. Bu ünlü dikili taşın adı nedir?",
+      soru: " 1 Tarihin bir başka dönüm noktası olarak gösterilir. Sultanahmet Meydanı'nda, Yerebatan Sarnıcı üstünde yer alır. İstanbul'a gelen turistlerin mutlaka uğrak yerleri arasındadır. Bu ünlü dikili taşın adı nedir?",
       secenekler: {
         a: "Milenyum Taşı",
         b: "Zaman Taşı",
@@ -23,7 +22,7 @@ $(document).ready(function () {
       dogrucevap: "A",
     },
     {
-      soru: "Dünyanın en büyük deniz kazalarından biri olarak tarihe geçti. 1912 yılında 1.550 kişiye mezar olan ünlü transatlantiğin adı nedir? Ödüllü Filmlere konu olmuştur.",
+      soru: " 2 Dünyanın en büyük deniz kazalarından biri olarak tarihe geçti. 1912 yılında 1.550 kişiye mezar olan ünlü transatlantiğin adı nedir? Ödüllü Filmlere konu olmuştur.",
       secenekler: {
         a: "Yıldızlar arası",
         b: "Grinin 50 Tonu",
@@ -33,7 +32,7 @@ $(document).ready(function () {
       dogrucevap: "C",
     },
     {
-      soru: "Suçluların yakalanmasında kullanılan en önemli delillerden biridir, suçlunun geride bıraktığı iz?  ",
+      soru: " 3 Suçluların yakalanmasında kullanılan en önemli delillerden biridir, suçlunun geride bıraktığı iz?  ",
       secenekler: {
         a: "Ayakkabı izi",
         b: "El izi",
@@ -43,7 +42,7 @@ $(document).ready(function () {
       dogrucevap: "D",
     },
     {
-      soru: "Haberleşmenin eski dildeki adı nedir? ",
+      soru: " 4 Haberleşmenin eski dildeki adı nedir? ",
       secenekler: {
         a: "Muharebe",
         b: "Murahere",
@@ -53,13 +52,16 @@ $(document).ready(function () {
       dogrucevap: "C",
     },
   ];
+  // console.log("Soru sayisi: " + numberOfQuestion);
+  //let selectedQuestion = selectRandomQuestion(numberOfQuestion);
+  // let selectedQuestion = localStorage.getItem("selectedQuestion");
+
   let selectedQuestions = [];
   let numberOfQuestion = sorular.length;
   let selectedQuestion = selectRandomQuestion(numberOfQuestion);
   console.log("Secilen soru numarası : " + selectedQuestion);
   showQuestions(selectedQuestion);
-  let correctQuestion = 0;
-  let falseQuestion = 0;
+
   // IF U SELECT A
   $("#secenekA").click(function () {
     localStorage.setItem("selectedOption", "A");
@@ -133,7 +135,6 @@ $(document).ready(function () {
         selectedQuestion
     );
     selectedQuestion = localStorage.getItem("selectedQuestion");
-    // IF OPTION IS TRUE
     if (
       localStorage.getItem("selectedOption") ===
       sorular[selectedQuestion].dogrucevap
@@ -142,20 +143,19 @@ $(document).ready(function () {
       $(answer).removeClass("bg-warning");
       $(answer).addClass("bg-success");
       $("#idAreUOk").css("visibility", "hidden");
-      correctQuestion = correctQuestion + 1;
-      localStorage.setItem("correctQuestion", correctQuestion);
-    }
-
-    // IF OPTION IS FALSE
-    else {
-      falseQuestion = falseQuestion + 1;
-      localStorage.setItem("falseQuestion", falseQuestion);
+      // IF YOU SELECT YES BUTTUON THEN THE ANSWER IS NCT CORRECT.
+      // YOU CAN NOT SELECT ANY OPTIONS
+      // unbindOptions();
+    } else {
       let answer = "#secenek" + localStorage.getItem("selectedOption");
       $(answer).removeClass("bg-warning");
       $(answer).addClass("bg-danger");
       let correctAnswer = "#secenek" + sorular[selectedQuestion].dogrucevap;
       $(correctAnswer).addClass("bg-success");
       $("#idAreUOk").css("visibility", "hidden");
+      // IF YOU SELECT YES BUTTUON THEN THE ANSWER IS NCT CORRECT.
+      // YOU CAN NOT SELECT ANY OPTIONS
+      // unbindOptions();
     }
   });
   // IF YOU CLICK NO/HAYIR
@@ -176,10 +176,8 @@ $(document).ready(function () {
       localStorage.setItem("selectedQuestion", selectedQuestion);
       localStorage.setItem("selectedQuestions", selectedQuestions);
       console.log("Seçilen rastgele numara " + selectedQuestion);
-      return selectedQuestion;
     } else if (selectedQuestions.length == numberOfQuestion) {
       gameIsEnd();
-      unbindOptions();
     } else {
       while (selectedQuestions.includes(selectedQuestion)) {
         console.log("asdasd" + !selectedQuestions.includes(selectedQuestion));
@@ -190,8 +188,8 @@ $(document).ready(function () {
       localStorage.setItem("selectedQuestions", selectedQuestions);
       localStorage.setItem("selectedQuestion", selectedQuestion);
       console.log("Seçilen rastgele numara " + selectedQuestion);
-      return selectedQuestion;
     }
+    return selectedQuestion;
   }
 
   //  SHOW QUESTIONS AND OPTIONS
@@ -215,16 +213,25 @@ $(document).ready(function () {
     $("#secenekB").unbind("click");
     $("#secenekC").unbind("click");
     $("#secenekD").unbind("click");
-    $("#idNextQuestion").unbind("click");
+  }
+
+  // nok! IF YOU CLICK YES, I AM SURE! BUTTON THEN OTHER OPTIONS MAKE " CLICKABLE"
+  function bindOptions() {
+    $("#secenekA").bind("click");
+    $("#secenekB").bind("click");
+    $("#secenekC").bind("click");
+    $("#secenekD").bind("click");
   }
 
   // IF U CLICK NEXT QUESTION
   $("#idNextQuestion").click(function () {
+    // console.log("Number of question : " + numberOfQuestion);
+    // showQuestions(selectRandomQuestion(numberOfQuestion));
+    bindOptions();
     resetOptions();
     let index = selectRandomQuestion(numberOfQuestion);
     console.log("rastgele seçiciden gelen numara  : " + index);
     showQuestions(index);
-    localStorage.setItem("selectedOption", "0");
   });
   // IF CLICK NEXT QUESTION THEN RESET ALL OPTIONS
   function resetOptions() {
@@ -248,15 +255,6 @@ $(document).ready(function () {
   }
 
   function gameIsEnd() {
-    let skipQuestion =
-      numberOfQuestion -
-      localStorage.getItem("correctQuestion") -
-      localStorage.getItem("falseQuestion");
-    alert(`
-    Oyun Bitti. 
-    Doğru sayınız: ${localStorage.getItem("correctQuestion")}
-    Yanlış sayınız: ${localStorage.getItem("falseQuestion")}
-    Boş sayınız :  ${skipQuestion}`);
-    localStorage.clear();
+    alert("OYUN BİTTİ. SONUCUNUZ:");
   }
 });

@@ -1,0 +1,15 @@
+C:\Users\Mutlu\Desktop\www\dotnetStudy\4_Sum_Params\obj\Debug\net6.0\4_Sum_Params.csproj.AssemblyReference.cache
+C:\Users\Mutlu\Desktop\www\dotnetStudy\4_Sum_Params\obj\Debug\net6.0\4_Sum_Params.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mutlu\Desktop\www\dotnetStudy\4_Sum_Params\obj\Debug\net6.0\4_Sum_Params.AssemblyInfoInputs.cache
+C:\Users\Mutlu\Desktop\www\dotnetStudy\4_Sum_Params\obj\Debug\net6.0\4_Sum_Params.AssemblyInfo.cs
+C:\Users\Mutlu\Desktop\www\dotnetStudy\4_Sum_Params\obj\Debug\net6.0\4_Sum_Params.csproj.CoreCompileInputs.cache
+C:\Users\Mutlu\Desktop\www\dotnetStudy\4_Sum_Params\bin\Debug\net6.0\4_Sum_Params.exe
+C:\Users\Mutlu\Desktop\www\dotnetStudy\4_Sum_Params\bin\Debug\net6.0\4_Sum_Params.deps.json
+C:\Users\Mutlu\Desktop\www\dotnetStudy\4_Sum_Params\bin\Debug\net6.0\4_Sum_Params.runtimeconfig.json
+C:\Users\Mutlu\Desktop\www\dotnetStudy\4_Sum_Params\bin\Debug\net6.0\4_Sum_Params.dll
+C:\Users\Mutlu\Desktop\www\dotnetStudy\4_Sum_Params\bin\Debug\net6.0\4_Sum_Params.pdb
+C:\Users\Mutlu\Desktop\www\dotnetStudy\4_Sum_Params\obj\Debug\net6.0\4_Sum_Params.dll
+C:\Users\Mutlu\Desktop\www\dotnetStudy\4_Sum_Params\obj\Debug\net6.0\refint\4_Sum_Params.dll
+C:\Users\Mutlu\Desktop\www\dotnetStudy\4_Sum_Params\obj\Debug\net6.0\4_Sum_Params.pdb
+C:\Users\Mutlu\Desktop\www\dotnetStudy\4_Sum_Params\obj\Debug\net6.0\4_Sum_Params.genruntimeconfig.cache
+C:\Users\Mutlu\Desktop\www\dotnetStudy\4_Sum_Params\obj\Debug\net6.0\ref\4_Sum_Params.dll

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hello, world!</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -31,6 +31,29 @@
       crossorigin
     ></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- ANGULAR in HTML -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- <div ng-app="">
+      <p>Name: <input type="text" ng-model="name" /></p>
+      <p ng-bind="name"></p>
+    </div> -->
+
+    <div ng-app="MyApp" ng-controller="myCtrl" ng-init="name='John'">
+      <span ng-bind="name"></span>
+
+      <p>Expression 2+2 = {{2+2}}</p>
+
+      <p>Exression app variable name = {{name}}</p>
+      {{isim + " " + soyisim}}
+
+      <div test-directive></div>
+      <!-- <test-directive> </test-directive> -->
+    </div>
+    <script src="app.js"></script>
+    <script src="myApp.js"></script>
+    <script src="myCtrl.js"></script>
+  </body>
 </html>

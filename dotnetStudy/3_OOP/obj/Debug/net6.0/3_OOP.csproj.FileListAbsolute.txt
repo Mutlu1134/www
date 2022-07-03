@@ -1,0 +1,15 @@
+C:\Users\Mutlu\Desktop\www\dotnetStudy\3_OOP\bin\Debug\net6.0\3_OOP.exe
+C:\Users\Mutlu\Desktop\www\dotnetStudy\3_OOP\bin\Debug\net6.0\3_OOP.deps.json
+C:\Users\Mutlu\Desktop\www\dotnetStudy\3_OOP\bin\Debug\net6.0\3_OOP.runtimeconfig.json
+C:\Users\Mutlu\Desktop\www\dotnetStudy\3_OOP\bin\Debug\net6.0\3_OOP.dll
+C:\Users\Mutlu\Desktop\www\dotnetStudy\3_OOP\bin\Debug\net6.0\3_OOP.pdb
+C:\Users\Mutlu\Desktop\www\dotnetStudy\3_OOP\obj\Debug\net6.0\3_OOP.csproj.AssemblyReference.cache
+C:\Users\Mutlu\Desktop\www\dotnetStudy\3_OOP\obj\Debug\net6.0\3_OOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mutlu\Desktop\www\dotnetStudy\3_OOP\obj\Debug\net6.0\3_OOP.AssemblyInfoInputs.cache
+C:\Users\Mutlu\Desktop\www\dotnetStudy\3_OOP\obj\Debug\net6.0\3_OOP.AssemblyInfo.cs
+C:\Users\Mutlu\Desktop\www\dotnetStudy\3_OOP\obj\Debug\net6.0\3_OOP.csproj.CoreCompileInputs.cache
+C:\Users\Mutlu\Desktop\www\dotnetStudy\3_OOP\obj\Debug\net6.0\3_OOP.dll
+C:\Users\Mutlu\Desktop\www\dotnetStudy\3_OOP\obj\Debug\net6.0\refint\3_OOP.dll
+C:\Users\Mutlu\Desktop\www\dotnetStudy\3_OOP\obj\Debug\net6.0\3_OOP.pdb
+C:\Users\Mutlu\Desktop\www\dotnetStudy\3_OOP\obj\Debug\net6.0\3_OOP.genruntimeconfig.cache
+C:\Users\Mutlu\Desktop\www\dotnetStudy\3_OOP\obj\Debug\net6.0\ref\3_OOP.dll
