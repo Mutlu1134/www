@@ -1,0 +1,21 @@
+{
+  "name": "npm_learning",
+  "version": "1.0.0",
+  "description": "Just for learning npm",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [
+    "first",
+    "npm"
+  ],
+  "author": "MÇ",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "node-fetch": "^3.2.9",
+    "slugify": "^1.6.5"
+  }
+}
