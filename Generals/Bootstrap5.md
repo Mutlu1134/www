@@ -9,3 +9,4 @@
 5. Img.'i sağa sola yaslamak için `float-start` ya da `float-end`
 6. Img.'i ortalamak için `d-block mx-auto` (display-block)
 7. Img.'i responsive yapmak için `img-fluid`
+8. `offset-2` 2 birim boşluk bırakır `col-lg-8` 8 birim yer tutar. Sonrasında 2 birim otomatik boşluk kalır böylece div ortalanmış olur.

@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "Generals"
+		},
+		{
+			"path": "AnimatedBackground"
+		},
+		{
+			"path": "React"
+		},
+		{
+			"path": "React_Task_1"
+		},
+		{
+			"path": "React_Facebook_CreateReactApp"
+		},
+		{
+			"path": "JsTryCatch"
+		},
+		{
+			"path": "JsFetchAxiosAPI"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JsFetchAxiosAPI"
+	}
+}

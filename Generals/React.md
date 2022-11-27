@@ -3,3 +3,4 @@ npm:node package manager ve node js indirilmesi gerekir.
 Bir dosyada node.js başlatmak için.
 Node fetch'i kurmal için `npm i node-fetch`
 axios kütüphanesi node-fetch'ten daha iyi. onun için `npm i axios`
+create-react-app : çok hızlı şekilde react çalışmaya imkan veriyor.
